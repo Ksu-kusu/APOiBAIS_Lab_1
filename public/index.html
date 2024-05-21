@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Программа управления пользователями</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Программа управления пользователями</h1>
+
+
+    <section>
+      <h2>Пользователи</h2>
+      <div id="user-list">
+
+      </div>
+      <form id="user-form">
+        <label for="name">Никнейм:</label>
+        <input type="text" id="name" required>
+        <label for="email">Почтовый адрес:</label>
+        <input type="email" id="email" required>
+        <label for="role-id">Идентификатор роли:</label>
+        <input type="text" id="role-id" >
+        <label for="permission-id">Идентификатор разрешения:</label>
+        <input type="text" id="permission-id" >
+        <button type="submit">Добавить пользователя</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Роли</h2>
+      <div id="role-list">
+
+      </div>
+      <form id="role-form">
+        <label for="role-name">Название роли:</label>
+        <input type="text" id="role-name" required>
+        <button type="submit">Добавить роль</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Разрешения</h2>
+      <div id="permission-list">
+
+      </div>
+      <form id="permission-form">
+        <label for="permission-name">Название разрешения:</label>
+        <input type="text" id="permission-name" required>
+        <button type="submit">Добавить разрешение</button>
+      </form>
+    </section>
+
+
+    <section>
+      <h2>Статьи</h2>
+      <div id="article-list">
+
+      </div>
+      <form id="article-form">
+        <label for="article-title">Заголовок статьи:</label>
+        <input type="text" id="article-title" required>
+        <label for="user-id">Идентификатор пользователя:</label>
+        <input type="text" id="user-id" required>
+        <label for="article-content">Содержание статьи</label>
+        <textarea id="article-content" required></textarea>
+        <button type="submit">Добавить статью</button>
+      </form>
+    </section>
+
+
+    <section>
+      <h2>Комментарии</h2>
+      <div id="comment-list">
+
+      </div>
+      <form id="comment-form">
+        <label for="comment-content">Текст комментария:</label>
+        <textarea id="comment-content" required></textarea>
+        <label for="article-id">Идентификатор статьи:</label>
+        <textarea id="article-id" required></textarea>
+        <label for="article-user-id">Идентификатор пользователя:</label>
+        <textarea id="article-user-id" required></textarea>
+        <button type="submit">Добавить комментарий</button>
+      </form>
+    </section>
+
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
